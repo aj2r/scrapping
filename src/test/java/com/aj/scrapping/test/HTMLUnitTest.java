@@ -62,7 +62,7 @@ public class HTMLUnitTest {
         HtmlDivision divByid = (HtmlDivision) htmlPage.getElementById("block-block-7", caseSensitive);
 
         // Getting by Class¿? No way, use XPath
-        HtmlDivision divByClass = (HtmlDivision) htmlPage.getByXPath("/div[class='title']").get(0);
+        HtmlDivision divByClass = (HtmlDivision) htmlPage.getByXPath("//*[@class='title']").get(0);
 
         Utils.logInfo(LOG, "ENDING HTMLUnit test");
     }
